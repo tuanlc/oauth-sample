@@ -1,0 +1,33 @@
+{
+  "name": "oauth-sample",
+  "version": "0.0.1",
+  "description": "OAuth sample application",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack-dev-server --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanlc/oauth-sample.git"
+  },
+  "keywords": [
+    "oauth",
+    "sample",
+    "pratice",
+    "self-taught"
+  ],
+  "author": "tuancnttbk93@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuanlc/oauth-sample/issues"
+  },
+  "homepage": "https://github.com/tuanlc/oauth-sample#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

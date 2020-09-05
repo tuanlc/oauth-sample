@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    <button onclick="login()">Login with Google</button>
+    <script src="dist/bundle.js"></script>
+    <script>
+      function login() {
+        return OAuthClient.googleOauth.login({
+          redirect_uri: 'http://localhost:8080/callback',
+          response_type: 'code',
+          scope: 'https://www.googleapis.com/auth/drive.metadata.readonly',
+          include_granted_scopes: true,
+          state: 'pass-through value',
+          prompt: 'consent'
+        });
+      }
+    </script>
+  </body>
+</html>
